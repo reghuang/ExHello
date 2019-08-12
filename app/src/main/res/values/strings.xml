@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ExHello</string>
+    <string name="exedittext">ExEditText</string>
+    <string name="test1">請輸入任何字元</string>
+</resources>
