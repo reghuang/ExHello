@@ -1,82 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/TableLayout1"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity" >
 
-    <TextView
-        android:id="@+id/testview1"
-        android:layout_width="wrap_content"
+    <EditText android:id="@+id/edtATM"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="ExMileeToKm"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.486"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.022"
-        tools:text="ExMileeToKm" />
+        android:textSize="28sp"
+        android:gravity="center"
+        android:focusable="false"/>
+    <TableRow android:gravity="center">
+        <Button android:text="1" android:id="@+id/btnN1" />
+        <Button android:text="2" android:id="@+id/btnN2" />
+        <Button android:text="3" android:id="@+id/btnN3" />
+    </TableRow>
+    <TableRow android:gravity="center">
+        <Button android:text="4" android:id="@+id/btnN4" />
+        <Button android:text="5" android:id="@+id/btnN5" />
+        <Button android:text="6" android:id="@+id/btnN6" />
+    </TableRow>
+    <TableRow android:gravity="center">
+        <Button android:text="7" android:id="@+id/btnN7" />
+        <Button android:text="8" android:id="@+id/btnN8" />
+        <Button android:text="9" android:id="@+id/btnN9" />
+    </TableRow>
+    <TableRow android:gravity="center">
+        <Button android:text="清除" android:id="@+id/btnBack" />
+        <Button android:text="0" android:id="@+id/btnN0" />
+        <Button android:text="確定" android:id="@+id/btnOK" />
+    </TableRow>
+    <TableRow android:gravity="center">
+        <Button android:text="結束" android:id="@+id/btnEnd" />
+    </TableRow>
 
-    <EditText
-        android:id="@+id/editMilee"
-        android:layout_width="395dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="4dp"
-        android:hint="請輸入球速"
-        android:inputType="number"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="11dp"
-        android:text="英哩 : "
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/testview1" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="17dp"
-        android:text="時速 : "
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editMilee" />
-
-    <TextView
-        android:id="@+id/textViewKm"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginLeft="24dp"
-        android:layout_marginTop="16dp"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        app:layout_constraintStart_toEndOf="@+id/textView2"
-        app:layout_constraintTop_toBottomOf="@+id/editMilee"
-        tools:text="? 公里" />
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="395dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="8dp"
-        android:text="轉換"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+</TableLayout>
